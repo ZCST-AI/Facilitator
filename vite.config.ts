@@ -1,0 +1,19 @@
+import { defineConfig } from "vite";
+import preact from "@preact/preset-vite";
+import tailwindcss from "@tailwindcss/vite";
+import checker from "vite-plugin-checker";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+    plugins: [preact(), tailwindcss(), checker({ typescript: true })],
+    resolve: {
+        dedupe: ["preact"],
+        alias: [
+            { find: "react", replacement: "preact/compat" },
+            { find: "react-dom/test-utils", replacement: "preact/test-utils" },
+            { find: "react-dom", replacement: "preact/compat" },
+            { find: "react/jsx-runtime", replacement: "preact/jsx-runtime" },
+            { find: "@preact/signals-react", replacement: "@preact/signals" },
+        ],
+    },
+});

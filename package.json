@@ -1,0 +1,41 @@
+{
+    "license": "AGPL-3.0-only",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "cosmos": "cosmos",
+        "cosmos-export": "cosmos-export",
+        "ts": "node --import @swc-node/register/esm-register"
+    },
+    "dependencies": {
+        "@carbon/react": "^1.80.0",
+        "@instructor-ai/instructor": "^1.6.0",
+        "@preact/signals": "^2.0.3",
+        "@tailwindcss/vite": "^4.1.4",
+        "bowser": "^2.11.0",
+        "deepsignal": "^1.6.0",
+        "fp-ts": "^2.16.9",
+        "localforage": "^1.10.0",
+        "openai": "^4.95.0",
+        "preact": "^10.25.3",
+        "preact-iso": "^2.9.1",
+        "tailwindcss": "^4.1.4",
+        "underscore": "^1.13.7",
+        "zod": "^3.24.3"
+    },
+    "devDependencies": {
+        "@preact/preset-vite": "^2.9.3",
+        "@swc-node/register": "^1.10.10",
+        "@types/underscore": "^1.13.0",
+        "prettier": "^3.5.3",
+        "react-cosmos": "^6.2.3",
+        "react-cosmos-plugin-vite": "^6.2.0",
+        "sass-embedded": "^1.86.3",
+        "typescript": "^5.8.3",
+        "vite": "^6.0.4",
+        "vite-plugin-checker": "^0.9.1",
+        "vitest": "^3.1.1"
+    }
+}

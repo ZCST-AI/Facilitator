@@ -1,0 +1,13 @@
+onlyBuiltDependencies:
+  - '@carbon/colors'
+  - '@carbon/feature-flags'
+  - '@carbon/grid'
+  - '@carbon/icon-helpers'
+  - '@carbon/icons-react'
+  - '@carbon/layout'
+  - '@carbon/motion'
+  - '@carbon/react'
+  - '@carbon/styles'
+  - '@carbon/themes'
+  - '@carbon/type'
+  - '@parcel/watcher'
