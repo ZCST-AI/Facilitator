@@ -6,7 +6,7 @@ export const zh_CN: typeof en_US = {
     wizard: {
         welcome: {
             title: "您好",
-            description: "欢迎使用 Facilitator",
+            description: "欢迎您使用 Facilitator",
         },
         profile: {
             title: "档案",

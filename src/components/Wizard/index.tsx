@@ -1,6 +1,4 @@
-import { Button, Tile } from "@carbon/react";
-import { i18n } from "../../libraries/signals/i18n";
-import { en_US } from "../../libraries/languages/en-US";
+import { Button } from "@carbon/react";
 import { useComputed, useSignal, useSignalEffect } from "@preact/signals";
 import { ArrowLeft, ArrowRight } from "@carbon/react/icons";
 import { steps } from "./steps";
@@ -9,7 +7,6 @@ import { store } from "../../libraries/stores/store";
 const step = store("wizard.step", 0);
 
 export const Wizard = () => {
-    const i = i18n.value as typeof en_US;
     const is_first = useComputed(() => step.value === 0);
     const is_last = useComputed(() => step.value === steps.length - 1);
     const validity = useSignal<boolean>(false);

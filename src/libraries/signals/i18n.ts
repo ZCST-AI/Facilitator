@@ -1,4 +1,4 @@
-import { computed, effect, signal, Signal, ReadonlySignal } from "@preact/signals";
+import { computed, signal, ReadonlySignal } from "@preact/signals";
 import { languages } from "../environments/language";
 import { low_equal } from "../utils/low-equal";
 import { en_US } from "../languages/en-US";
@@ -6,7 +6,7 @@ import { en_US } from "../languages/en-US";
 export type I18nLanguage = [Language: string, Region: string];
 export type I18nResources = [I18nLanguage, object][];
 
-export const current_language = signal<I18nLanguage>([languages[0][0], languages[0][1][0]]);
+export const current_language = signal<I18nLanguage>([languages[0]![0]!, languages[0]![1]![0]!]);
 
 const i18n_resources = signal<I18nResources>([]);
 

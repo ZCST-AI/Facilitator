@@ -1,7 +1,6 @@
 import { WizardBase } from "./WizardBase";
 import { i } from "../../../libraries/signals/i18n";
 import { commit } from "../../../libraries/utils/commit";
-import { en_US } from "../../../libraries/languages/en-US";
 import { TextInput } from "@carbon/react";
 import { config } from "../../../libraries/config";
 import { Signal } from "@preact/signals";

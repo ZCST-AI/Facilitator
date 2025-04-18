@@ -1,6 +1,6 @@
 import { ComponentChildren } from "preact";
 import { GlobalTheme, Theme, usePrefersDarkScheme } from "@carbon/react";
-import { useEffect } from "preact/hooks";
+
 export default ({ children }: { children: ComponentChildren }) => {
     const dark = usePrefersDarkScheme();
 

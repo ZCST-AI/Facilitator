@@ -2,6 +2,7 @@
     "license": "AGPL-3.0-only",
     "type": "module",
     "scripts": {
+        "check": "tsc -p tsconfig.json",
         "dev": "vite",
         "build": "vite build",
         "preview": "vite preview",

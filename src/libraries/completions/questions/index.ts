@@ -1,10 +1,10 @@
 import { array, union, z } from "zod";
-import { ChoiceSingle, ChoiceMultiple, Choice } from "./choice";
-import { Fill } from "./fill";
-import { FreeLiterature, FreeMath, Free } from "./free";
-import { Match } from "./match";
-import { Order } from "./order";
-import { QuestionBase } from "./base";
+import { ChoiceSingle, ChoiceMultiple, Choice } from "./kinds/choice";
+import { Fill } from "./kinds/fill";
+import { FreeLiterature, FreeMath, Free } from "./kinds/free";
+import { Match } from "./kinds/match";
+import { Order } from "./kinds/order";
+import { QuestionBase } from "./kinds/base";
 
 const Simple = union([Choice, Fill, Match, Order, Free]);
 

@@ -4,8 +4,8 @@
         "module": "ESNext",
         "moduleResolution": "bundler",
         "noEmit": true,
-        "allowJs": true,
-        "checkJs": true,
+        "allowJs": false,
+        "checkJs": false,
 
         /* Preact Config */
         "jsx": "react-jsx",

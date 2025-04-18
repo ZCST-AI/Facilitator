@@ -3,12 +3,12 @@ import { type Question as QuestionType } from "../../libraries/completions/quest
 export const Question = (question: QuestionType) => {
     switch (question.type) {
         case "choice-single":
-        case "fill":
         case "choice-multiple":
-        case "match":
-        case "order":
         case "free-literature":
         case "free-math":
+        case "fill":
+        case "match":
+        case "order":
         case "complex":
         default:
             return <div>Unknown question type: {question.type}</div>;
